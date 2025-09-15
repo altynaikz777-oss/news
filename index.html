@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .top {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 0px;
+        gap: 30px;
+        width: 1450px;
+        height: 50px;
+        background-color: white;
+        z-index: 33;
+      }
+      .container {
+        position: relative;
+      }
+      .top span {
+        color: grey;
+      }
+      .letter {
+        color: black;
+        font-size: 40px;
+        position: absolute;
+        left: 120px;
+      }
+      .site {
+        position: absolute;
+        right: 200px;
+        gap: 30px;
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+      }
+      span:hover {
+        color: blueviolet;
+      }
+      .container1 {
+        width: 900px;
+        height: 600px;
+        background-color: white;
+        z-index: -22;
+      }
+      .container1 img {
+        width: 800px;
+        height: 300px;
+        position: absolute;
+        top: 90px;
+        left: 100px;
+      }
+      .container {
+        position: relative;
+      }
+      .bold {
+        font-size: 50px;
+        position: absolute;
+        top: 380px;
+        left: 100px;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 400px;
+        left: 480px;
+      }
+      .column p {
+        font-size: 20px;
+      }
+      .text {
+        display: flex;
+        justify-content: center;
+      }
+      .column button {
+        width: 200px;
+        height: 50px;
+        color: black;
+        background-color: rgb(228, 103, 103);
+        font-size: 20px;
+        border: none;
+      }
+      .black {
+        width: 350px;
+        height: 500px;
+        background-color: black;
+        margin-left: 930px;
+        margin-top: -550px;
+        position: relative;
+      }
+      .white {
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;
+      }
+      .grey {
+        color: grey;
+        font-family: sans-serif;
+      }
+      .yellow {
+        color: orange;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        font-family: sans-serif;
+      }
+      .text2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 20px;
+        gap: 40px;
+      }
+      .omg1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      .omg2 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .omg3 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .retro {
+        width: 90px;
+        height: 110px;
+      }
+      .laptop {
+        width: 90px;
+        height: 110px;
+      }
+      .game {
+        width: 90px;
+        height: 110px;
+      }
+      .container4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .pink {
+        color: rgb(226, 119, 137);
+      }
+      .bold3 {
+        font-size: 20px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <strong class="letter">W.</strong>
+        <div class="site">
+          <span>Home</span><span> New </span><span>Popular </span
+          ><span>Trending</span><span> Categories</span>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="container1">
+          <img src="image-web-3-desktop.jpg" />
+          <div class="text">
+            <h1 class="bold">
+              The Bright<br />
+              Future of <br />Web 3.0?
+            </h1>
+            <div class="column">
+              <p class="grey">
+                We dive into the next evolution of the web that <br />claims to
+                put the power of the platforms back<br />
+                into the hands of the people. But is it really<br />
+                fulfilling its promise?
+              </p>
+              <button><strong>READ MORE</strong></button>
+            </div>
+          </div>
+        </div>
+        <div class="black">
+          <h3 class="yellow">New</h3>
+          <div class="text2">
+            <div class="eng1">
+              <strong class="white">Hydrogen VS Electric Cars</strong>
+              <p class="grey">
+                Will hydrogen-fueled cars ever catch up to<br />
+                EVs?
+              </p>
+              <hr />
+            </div>
+            <div class="eng2">
+              <strong class="white">The Downsides of AI Artistry</strong>
+              <p class="grey">
+                What are the possible adverse effects of <br />on-demand AI
+                image generation?
+              </p>
+              <hr />
+            </div>
+            <div class="eng3">
+              <strong class="white">Is VC Funding Drying Up?</strong>
+              <p class="grey">
+                Private funding by VC firms is down 50%<br />
+                YOY. We take a look at what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container4">
+        <div class="omg1">
+          <div class="img"><img src="image-retro-pcs.jpg" class="retro" /></div>
+          <div class="teext1">
+            <h1 class="pink">01</h1>
+            <strong class="bold3">Reviving Retro PCs </strong>
+            <p class="grey">
+              What happens when old PCs <br />are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="omg2">
+          <div class="img2">
+            <img src="image-top-laptops.jpg" class="laptop" />
+          </div>
+          <div class="teext2">
+            <h1 class="pink">02</h1>
+            <strong class="bold3">Top 10 Laptops of 2022</strong>
+            <p class="grey">
+              Our best picks for various <br />needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="omg3">
+          <div class="img3">
+            <img src="image-gaming-growth.jpg" class="game" />
+          </div>
+          <div class="teext3">
+            <h1 class="pink">03</h1>
+            <strong class="bold3">The Growth of Gaming</strong>
+            <p class="grey">
+              How the pandemic has sparked <br />fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
